@@ -4,6 +4,7 @@ Name: "cl_init.lua".
 --]]
 
 include("sh_init.lua");
+include("sh_config.lua");
 include("scoreboard/scoreboard.lua");
 
 -- Set some information for the gamemode.

@@ -4,7 +4,7 @@ Name: "init.lua".
 --]]
 --
 
-require"mysqloo"
+require( "mysqloo" )
 
 local spam = true;
 
@@ -107,7 +107,7 @@ function GM:Initialize()
 	local database = self.Config["MySQL Database"]
 
 	-- Initialize a connection to the MySQL database.
-	self.DB, err = mysqloo.connect(self.Config["MySQL Host"], self.Config["MySQL Username"], self.Config["MySQL Password"], self.Config["MySQL Database"], 3306)
+	self.DB, err = mysqloo.connect(self.Config["MySQL Host"], self.Config["MySQL Username"], self.Config["MySQL Password"], self.Config["MySQL Database"], self.Config["MySQL Port"])
 	if (!self.DB) then
 		error("You didn't setup the SQL correctly!")
 	end
