@@ -308,6 +308,6 @@ Civilians may not use silenced weapons
 Any civilian seen with an illegal or police weapon will be arrested on the spot.
 Anyone who uses a Vuvuzela is to be shot on sight.
 [Temporary Laws1]
-]]
+]];
 
 GM.Config = config;

@@ -4,7 +4,9 @@ Name: "sh_init.lua".
 --]]
 function includecs(file)
 	include(file);
-	AddCSLuaFile(file);
+	if (SERVER) then
+		AddCSLuaFile(file);
+	end
 end
 
 GM.Name = "Applejack";
@@ -140,7 +142,7 @@ if (SERVER) then
 end
 
 -- Whoot for Mewnshien libraries
-GM:LoadPlugins()
+GM:LoadPlugins();
 GM:LoadItems();
 
 --This stuff needs to be after plugins but before everything else

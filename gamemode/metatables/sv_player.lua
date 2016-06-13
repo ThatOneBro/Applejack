@@ -748,7 +748,7 @@ end
 function meta:SaveData(create)
 	if (not self._Initialized) then return end
 	local query = create and createCreateQuery(self) or createUpdateQuery(self);
---	print(query);
+	print(query);
 	local name = self:Name(); -- In case they leave and then cause an error.
 	GAMEMODE:Query(query, function()
 		GM:Log(EVENT_SQLDEBUG,"SQL Statement successful for %q", name);

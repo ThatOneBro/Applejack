@@ -47,7 +47,7 @@ util.AddNetworkString("cider_Container_Update")
 util.AddNetworkString("cider_Container")
 util.AddNetworkString("helpReplace")
 
--- Conetents
+-- Contents
 local path = GM.Folder.."/content"
 local folders = {""}
 while true do
